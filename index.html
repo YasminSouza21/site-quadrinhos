@@ -24,18 +24,16 @@
     <main>
         <section id="Home">
             <div id="text-home">
-                <h1>Mergulhe no Mundo dos Quadrinhos: Explore o <span class="title-home">HQ COLLETIONS</span>!</h1>
-                <p>Dos quadrinhos clássicos às adaptações cinematográficas de grande orçamento, os super-heróis
-                    continuam a cativar o público. Mais do que simples entretenimento, essas histórias exploram temas
-                    atemporais como justiça, moralidade e o eterno conflito entre o bem e o mal. Em um mundo cada vez
-                    mais complexo, a figura do herói, com seus poderes extraordinários e sua busca incansável por um
-                    futuro melhor, oferece esperança e inspiração, lembrando-nos que a luta por um mundo mais justo
-                    sempre vale a pena.</p>
-                <button>EXPLORAR
-                </button>
+                <h1>Explore o <span class="title-home">HQ COLLETIONS</span> !</h1>
+                <p>Mergulhe no Multiverso das HQs: Explore mundos infinitos e encontre suas próximas histórias
+                    favoritas!</p>
+                <div id="search">
+                    <input id="input-search" type="text" placeholder="Pesquise sua HQ">
+                    <button>Explorar</button>
+                </div>
             </div>
             <div id="img-home">
-                <img src="images/avengers.png" alt="">
+                <img src="images/pngwing.com (13).png" alt="">
             </div>
         </section>
         <section id="sobre">
@@ -54,6 +52,42 @@
                 </div>
                 <div class="img-sobre">
                     <img src="images/logo-dc.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="mais-lidos">
+            <div id="container-mais-lidos">
+                <h1>Mais Lidos</h1>
+                <div id="btns-mais-lidos">
+                    <button onclick="mudarConteudo(1)" id="btn-hqs" class="btn-mais-lidos">HQS</button>
+                    <button onclick="mudarConteudo(2)" id="btn-marvel" class="btn-mais-lidos">Marvel</button>
+                    <button onclick="mudarConteudo(3)" id="btn-DC" class="btn-mais-lidos">DC</button>
+                    <button onclick="mudarConteudo(4)" id="btn-outros" class="btn-mais-lidos">Outros</button>
+                </div>
+                <div id="container-hqs">
+                    <h1 id="text-p">HQS</h1>
+                    <div id="subcontainer-hqs">
+                        <div class="hqs">
+                            <img id="img-1" src="images/hqs1.png" alt="">
+                            <h3 id="text-1">Lanterna Verde 06</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                        <div class="hqs">
+                            <img id="img-2" src="images/hqs2.png" alt="">
+                            <h3 id="text-2">Batman Vol.21</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                        <div class="hqs">
+                            <img id="img-3" src="images/hqs3.png" alt="">
+                            <h3 id="text-3">Arlequina: Edição Especial</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                        <div class="hqs">
+                            <img id="img-4" src="images/hqs4.png" alt="">
+                            <h3 id="text-4">Homem De Ferro Vol.1</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -109,43 +143,80 @@
                         inocentes daqueles que tentam explorá-lo ou prejudicá-lo.</p>
                 </div>
             </div>
-        </section>
-        <section id="mais-lidos">
-            <div id="container-mais-lidos">
-                <div id="btns-mais-lidos">
-                    <button  onclick="mudarConteudo(1)"  id="btn-hqs" class="btn-mais-lidos">HQS</button>
-                    <button onclick="mudarConteudo(2)" id="btn-marvel" class="btn-mais-lidos">Marvel</button>
-                    <button onclick="mudarConteudo(3)" id="btn-DC" class="btn-mais-lidos">DC</button>
-                    <button onclick="mudarConteudo(4)" id="btn-outros" class="btn-mais-lidos">Outros</button>
-                </div>
-                <div id="container-hqs">
-                    <h1 id="text-p">HQS</h1>
-                    <div id="subcontainer-hqs">
-                        <div class="hqs">
-                            <img id="img-1" src="images/hqs1.png" alt="">
-                            <h3 id="text-1">Lanterna Verde 06</h3>
-                            <button class="btn-hq">Leia</button>
-                        </div>
-                        <div class="hqs">
-                            <img id="img-2" src="images/hqs2.png" alt="">
-                            <h3 id="text-2">Os Melhores Do Mundo Vol.21</h3>
-                            <button class="btn-hq">Leia</button>
-                        </div>
-                        <div class="hqs">
-                            <img id="img-3" src="images/hqs3.png" alt="">
-                            <h3 id="text-3">Arlequina: Edição Especial De 30 Anos</h3>
-                            <button class="btn-hq">Leia</button>
-                        </div>
-                        <div class="hqs">
-                            <img id="img-4" src="images/hqs4.png" alt="">
-                            <h3 id="text-4">Homem De Ferro Vol.1</h3>
-                            <button class="btn-hq">Leia</button>
-                        </div>
+            <div class="container-personagens" id="batman">
+                <div class="subcontainer-personagens">
+                    <img src="images/batman.png" alt="">
+                    <div class="name-personagem" id="name-batman"><span class="letter-transparent"
+                            id="batman-letter-transparent">Bat</span>man
                     </div>
+                </div>
+                <div class="text-personagem" id="text-batman">
+                    <h1>BATMAN</h1>
+                    <p>Sob o manto da noite em Gotham City, um símbolo de esperança surge das sombras: o Batman.
+                        Bilionário de dia, Bruce Wayne dedica sua vida à justiça, combatendo o crime com inteligência,
+                        tecnologia e um físico aprimorado. Assombrado pela tragédia de sua infância, ele é o vigilante
+                        implacável que a cidade precisa, um guardião silencioso que infunde medo nos corações dos
+                        criminosos e inspira esperança nos inocentes. Ele é o Cavaleiro das Trevas, o maior detetive do
+                        mundo, ele é o Batman.</p>
+                </div>
+            </div>
+            <div class="container-personagens" id="coringa">
+                <div class="subcontainer-personagens">
+                    <img src="images/coringa.png" alt="">
+                    <div class="name-personagem" id="name-coringa"><span class="letter-transparent"
+                            id="coringa-letter-transparent">Coringa</span>
+                    </div>
+                </div>
+                <div class="text-personagem" id="text-coringa">
+                    <h1>CORINGA</h1>
+                    <p>Um agente do caos em meio à ordem, o Coringa é o sorriso maníaco que assombra Gotham City. Com
+                        uma mente imprevisível e um humor macabro, ele desafia todas as regras, espalhando o terror e a
+                        anarquia por onde passa. Sua aparência grotesca esconde uma inteligência perversa, capaz de
+                        elaborar planos elaborados e sádicos, transformando a vida em uma piada de mau gosto. Ele é a
+                        antítese do Batman, a sombra distorcida que reflete o caos inerente à sociedade. Ele é o
+                        Coringa, o palhaço príncipe do crime, um enigma enlouquecedor que personifica a
+                        imprevisibilidade da insanidade.</p>
+                </div>
+            </div>
+            <div class="container-personagens" id="flash">
+                <div class="subcontainer-personagens">
+                    <img src="images/flash.png" alt="">
+                    <div class="name-personagem" id="name-flash"><span class="letter-transparent"
+                            id="batman-letter-transparent">Flash</span>
+                    </div>
+                </div>
+                <div class="text-personagem" id="text-flash">
+                    <h1>FLASH</h1>
+                    <p>Um borrão vermelho corta a cidade, mais rápido que um relâmpago. É o Flash, o homem mais veloz do
+                        mundo! Dotado pela Força de Aceleração, Barry Allen corre em velocidades inimagináveis,
+                        protegendo Central City de ameaças que ninguém mais consegue deter. Com um coração de ouro e um
+                        senso de justiça inabalável, ele corre contra o tempo para salvar o dia, sempre com um sorriso
+                        no rosto e pronto para uma boa piada. Ele é um farol de esperança, um símbolo de que a
+                        velocidade pode ser usada para o bem. Ele é o Flash, o velocista escarlate, um raio de esperança
+                        em um mundo que precisa de heróis rápidos.</p>
                 </div>
             </div>
         </section>
     </main>
+    <footer id="footer">
+        <img id="img-avengers" src="images/imagem-rodape.png" alt="">
+        <div id="sub-footer">
+            <h2>HQ COLLETIONS</h2>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Catalogo</a></li>
+                    <li><a href="">Mais Lidos</a></li>
+                </ul>
+            </nav>
+            <div class="btns-redes-fotter">
+                <button class="btn-footer"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></button>
+                <button class="btn-footer"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></button>
+                <button class="btn-footer"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="script.js">
 </script>
