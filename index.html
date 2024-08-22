@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f521bac37.js" crossorigin="anonymous"></script>
+    <title>Livro</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <h1>HQ COLLETIONS</h1>
+                <li><a href="">Catalogo</a></li>
+                <li><a href="">Mais Lidos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Home">
+            <div id="text-home">
+                <h1>Mergulhe no Mundo dos Quadrinhos: Explore o <span class="title-home">HQ COLLETIONS</span>!</h1>
+                <p>Dos quadrinhos clássicos às adaptações cinematográficas de grande orçamento, os super-heróis
+                    continuam a cativar o público. Mais do que simples entretenimento, essas histórias exploram temas
+                    atemporais como justiça, moralidade e o eterno conflito entre o bem e o mal. Em um mundo cada vez
+                    mais complexo, a figura do herói, com seus poderes extraordinários e sua busca incansável por um
+                    futuro melhor, oferece esperança e inspiração, lembrando-nos que a luta por um mundo mais justo
+                    sempre vale a pena.</p>
+                <button>EXPLORAR
+                </button>
+            </div>
+            <div id="img-home">
+                <img src="images/avengers.png" alt="">
+            </div>
+        </section>
+        <section id="sobre">
+            <div id="subcontainer-sobre">
+                <div class="img-sobre">
+                    <img src="images/logo-marvel.png" alt="">
+                </div>
+                <div id="text-sobre">
+                    <h1>SOBRE A <span class="title-home">HQ COLLETIONS</span></h1>
+                    <p>HQ Collections: Seu portal para o universo dos super-heróis! Mergulhe em milhares de HQs
+                        digitais, desde clássicos atemporais até os últimos lançamentos. Leia online ou offline,
+                        conecte-se com outros fãs e explore um mundo de aventuras épicas. Comece sua jornada hoje mesmo
+                        em <span class="title-home">HQ Collections</span>!</p>
+                    <a href=""><button class="btn">Saiba mais <i class="fa-solid fa-arrow-right"
+                                style="color: #ffffff;"></i></i></button></a>
+                </div>
+                <div class="img-sobre">
+                    <img src="images/logo-dc.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="catalogo">
+            <div id="title-catalogo">
+                <h1>FAVORITOS DAS HQS</h1>
+            </div>
+            <div class="container-personagens" id="container-spider">
+                <div class="subcontainer-personagens">
+                    <img src="images/spider-main.png" alt="">
+                    <div class="name-personagem"><span class="letter-transparent">SPIDER</span>-MAN
+                    </div>
+                </div>
+                <div class="text-personagem">
+                    <h1>SPIDER-MAN</h1>
+                    <p>O Homem-Aranha, alter ego de Peter Parker, é um super-herói da Marvel Comics criado por Stan Lee
+                        e Steve Ditko. Ele é um órfão que, após ser picado por uma aranha radioativa, ganha poderes como
+                        superforça, agilidade, capacidade de escalar paredes e disparar teias, além de um sentido de
+                        perigo chamado "sentido-aranha". Como Homem-Aranha, ele combate o crime em Nova Iorque enquanto
+                        lida com os desafios da adolescência.</p>
+                </div>
+            </div>
+            <div class="container-personagens" id="iron-main">
+                <div class="subcontainer-personagens">
+                    <img src="images/homem-de-ferro.png" alt="">
+                    <div class="name-personagem" id="name-iron-main"><span class="letter-transparent">IRON</span>-MAN
+                    </div>
+                </div>
+                <div class="text-personagem">
+                    <h1>IRON-MAN</h1>
+                    <p>Bilionário, playboy e filantropo, Tony Stark era um gênio inventor que construía armas avançadas.
+                        Após ser sequestrado e gravemente ferido, ele cria uma armadura tecnológica para escapar e
+                        proteger o mundo como o Homem de Ferro. Com sua inteligência, sarcasmo e arsenal de alta
+                        tecnologia, ele se torna um dos heróis mais importantes da Marvel, combatendo ameaças globais e
+                        defendendo a Terra com coragem e um toque de arrogância charmosa.</p>
+                </div>
+            </div>
+            <div class="container-personagens" id="hulk">
+                <div class="subcontainer-personagens">
+                    <img src="images/hulk.png" alt="">
+                    <div class="name-personagem" id="name-hulk">Hu<span class="letter-transparent"
+                            id="hulk-letter-transparent">lk</span>
+                    </div>
+                </div>
+                <div class="text-personagem" id="text-hulk">
+                    <h1>HULK</h1>
+                    <p>Dr. Bruce Banner, um brilhante cientista, foi exposto a uma alta dose de radiação gama durante um
+                        experimento. Essa experiência o transformou no Hulk, uma criatura colossal verde de força
+                        descomunal e fúria incontrolável. Atormentado por sua transformação e pela constante ameaça que
+                        representa, Banner vive em fuga, buscando uma cura enquanto tenta controlar o monstro interior
+                        que desperta com a raiva, deixando um rastro de destruição por onde passa. Apesar de sua
+                        natureza selvagem, o Hulk, em alguns momentos, se mostra capaz de atos heroicos, protegendo os
+                        inocentes daqueles que tentam explorá-lo ou prejudicá-lo.</p>
+                </div>
+            </div>
+        </section>
+        <section id="mais-lidos">
+            <div id="container-mais-lidos">
+                <div id="btns-mais-lidos">
+                    <button  onclick="mudarConteudo(1)"  id="btn-hqs" class="btn-mais-lidos">HQS</button>
+                    <button onclick="mudarConteudo(2)" id="btn-marvel" class="btn-mais-lidos">Marvel</button>
+                    <button onclick="mudarConteudo(3)" id="btn-DC" class="btn-mais-lidos">DC</button>
+                    <button onclick="mudarConteudo(4)" id="btn-outros" class="btn-mais-lidos">Outros</button>
+                </div>
+                <div id="container-hqs">
+                    <h1 id="text-p">HQS</h1>
+                    <div id="subcontainer-hqs">
+                        <div class="hqs">
+                            <img id="img-1" src="images/hqs1.png" alt="">
+                            <h3 id="text-1">Super hero</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                        <div class="hqs">
+                            <img id="img-2" src="images/hqs2.png" alt="">
+                            <h3 id="text-2">Super hero</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                        <div class="hqs">
+                            <img id="img-3" src="images/hqs3.png" alt="">
+                            <h3 id="text-3">Super hero</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                        <div class="hqs">
+                            <img id="img-4" src="images/hqs4.png" alt="">
+                            <h3 id="text-4">Super hero</h3>
+                            <button class="btn-hq">Leia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js">
+</script>
+
+</html>
