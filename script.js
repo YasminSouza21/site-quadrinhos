@@ -47,3 +47,39 @@ function mudarConteudo(botao) {
         document.getElementById("img-4").src = "images/hq-outros4.png";
     }
 }
+
+ScrollReveal().reveal('#container-spider', {
+    origin: 'left',
+    duration: 2000,
+    distance: "20%",
+});
+
+ScrollReveal().reveal('#iron-man', {
+    origin: 'right',
+    duration: 2000,
+    distance: "20%",
+});
+
+ScrollReveal().reveal('#hulk', {
+    origin: 'left',
+    duration: 2000,
+    distance: "20%",
+});
+
+ScrollReveal().reveal('#batman', {
+    origin: 'right',
+    duration: 2000,
+    distance: "20%",
+});
+
+ScrollReveal().reveal('#coringa', {
+    origin: 'left',
+    duration: 2000,
+    distance: "20%",
+});
+
+ScrollReveal().reveal('#flash', {
+    origin: 'right',
+    duration: 2000,
+    distance: "20%",
+});
