@@ -103,12 +103,11 @@ a:hover {
 }
 
 .mission{
+   text-align: center;
    height: 50vh;
 }
 
-.values{
-   height: 80vh;
-}
+
 
 .about,
 .team,
@@ -232,12 +231,68 @@ a:hover {
    margin-bottom: 0.5rem;
 }
 
+.values{
+   height: 90vh;
+   width: 100%;
+   padding: 10px;
+}
+
+.box-values{
+   position: relative;
+   height: 300px;
+   width: 400px;
+   padding: 10px;
+   border: 2px solid #2d2d2d;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   transition: all 0.5s ease-in-out;
+}
+
+.box-values::after{
+   content: "";
+   display: block;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border-bottom: 2px solid #96221a;
+   border-right: 2px solid #96221a;
+   bottom: -1.8px;
+   right: -2px;
+   transition: all 0.5s ease-in-out;
+}
+
+.box-values::before{
+   content: "";
+   display: block;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border-top: 2px solid #96221a;
+   border-left: 2px solid #96221a;
+   top: -2px;
+   left: -2px;
+   transition: all 0.5s ease-in-out;
+}
+
+.box-values:hover::after{
+   width: 100px;
+   height: 100px;
+}
+
+.box-values:hover::before{
+   width: 100px;
+   height: 100px;
+}
 
 
 footer {
    background-color: #96221a;
    padding: 1.5rem 0;
    text-align: center;
+   height: 100vh;
 
 }
 

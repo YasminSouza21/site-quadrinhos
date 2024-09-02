@@ -18,6 +18,7 @@
 
 html{
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar{
@@ -60,6 +61,7 @@ ul h1 {
     background-color: black;
     height: 80vh;
     width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,16 +72,16 @@ ul h1 {
 
 #text-home{
     color: white;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     font-size: 1.4rem;
     text-align: justify;
 }
 
 #text-home h1{
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #text-home button{
@@ -115,6 +117,11 @@ ul h1 {
     border: 2px solid #96221A;
 }
 
+
+input::placeholder{
+    color: white;
+}
+
 #sobre{
     height: 100vh;
     background-color: black;
@@ -123,6 +130,7 @@ ul h1 {
     align-items: center;
     justify-content: center;
     font-family: var(--font-josefin);
+    margin-bottom: 50px;
 }
 
 #subcontainer-sobre{
@@ -130,7 +138,7 @@ ul h1 {
     justify-content: space-around;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
+    height: 100vh;
     width: 90%;
 }
 
@@ -314,16 +322,18 @@ ul h1 {
     justify-content: center;
     width: 80%;
     height: 100vh;
-    gap: 10px;
+    
 }
 
 #btns-mais-lidos{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
 }
 
 .btn-mais-lidos{
-    height: 60px;
+    height: 50px;
     width: 120px;
     border-radius: 12px;
     border: 2px solid #96221A;
@@ -332,7 +342,7 @@ ul h1 {
 }
 
 #container-hqs {
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     border-radius: 20px;
     border: 1px solid #2d2d2d;
@@ -376,6 +386,13 @@ ul h1 {
     border: 1px solid #2d2d2d;
 }
 
+.btn-hq:hover{
+    transform: scale(1.1);
+    transition: 0.8s all ease-in-out;
+    color: white;
+    box-shadow: 0 0 10px #ffff;
+}
+
 #footer{
     padding: 20px;
     position: relative;
@@ -386,7 +403,7 @@ ul h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 300px;
+    padding-bottom: 325px;
 }
 
 #footer img{
@@ -423,4 +440,5 @@ ul h1 {
 
 .btn-footer:hover{
     transform: scale(1.1);
+    background-color: #000000;
 }
