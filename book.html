@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HQ COLLECTION</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <script>
+        function pegarHqEscolhido() {
+            const hqTitle = localStorage.getItem('hqTitle');
+            const hqImage = localStorage.getItem('hqImage');
+            const hqTexto = localStorage.getItem('hqTexto');
+
+
+            document.getElementById('title-hq').textContent = hqTitle;
+            document.getElementById('img-hq').src = hqImage;
+            document.getElementById('hq-texto').textContent = hqTexto;
+        }
+        window.onload = pegarHqEscolhido;
+    </script>
 </head>
+
 <body>
     <header>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
+                <li><a href="about-me.html">Sobre</a></li>
                 <h1>HQ COLLECTION</h1>
                 <li><a href="#catalog">Catálogo</a></li>
                 <li><a href="#contact">Mais lidos</a></li>
@@ -23,18 +38,24 @@
         <section class="book-section">
             <div class="book-details">
                 <div class="title-book">
-                    <img src="images/hqs4.png" alt="capa-hq">
+                    <img id="img-hq" src="" alt="capa-hq">
                     <div class="author-title">
-                        <h1>Coleção Clássica Marvel Vol. 8 - Homem de Ferro Vol. 1</h1>
-                        <p class="author"><strong>Autor(a):</strong> Ali Hazelwood</p>
+                        <h1 id="title-hq">Coleção Clássica Marvel Vol. 8 - Homem de Ferro Vol. 1</h1>
+                        <p class="author"><strong>Autor(a):</strong> <span id="author-hq">Ali Hazelwood</span></p>
                     </div>
                 </div>
-                <p class="description">Criado em 1963 pela imaginação explosiva de Stan Lee, Larry Lieber, Jack Kirby e Don Heck, o Homem de Ferro em pouco tempo conquistou seu lugar no panteão dos maiores heróis da Marvel Comics, com suas aventuras cheias de ação e emoção. Nessas primeiras narrativas, o empresário transformado em super-herói Tony Stark tem sua dramática origem revelada e encara seus primeiros desafios, ainda bastante influenciadas pela Guerra Fria entre Estados Unidos e União Soviética, que pesava sobre o mundo.</p>
+                <p class="description" id="hq-texto">Criado em 1963 pela imaginação explosiva de Stan Lee, Larry Lieber, Jack Kirby e
+                    Don Heck, o Homem de Ferro em pouco tempo conquistou seu lugar no panteão dos maiores heróis da
+                    Marvel Comics, com suas aventuras cheias de ação e emoção. Nessas primeiras narrativas, o empresário
+                    transformado em super-herói Tony Stark tem sua dramática origem revelada e encara seus primeiros
+                    desafios, ainda bastante influenciadas pela Guerra Fria entre Estados Unidos e União Soviética, que
+                    pesava sobre o mundo.</p>
                 <button class="read-button">Ler esse Livro</button>
             </div>
-                <div class="iron-man">
-                    <img src="images/homem.png" alt="homem-de-ferro">
-                </div>
+            <div class="iron-man">
+                <img src="images/homem.png" alt="homem-de-ferro">
+            </div>
     </main>
 </body>
+
 </html>
